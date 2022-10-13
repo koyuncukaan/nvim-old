@@ -1,0 +1,8 @@
+git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+Mason install lua-language-server
+npm install -g install typscript-language-server
+npm install -g diagnostic-languageserver
+npm install -g @fsouza/prettierd
+npm install -g eslint_d
+npm install -g tree-sitter-cli
+npm install -g @astrojs/language-server
