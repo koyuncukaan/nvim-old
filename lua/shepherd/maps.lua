@@ -39,3 +39,8 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 keymap.set('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>')
+
+--Center scroll for search
+keymap.set('n', 'n', 'nzz')
+
+
