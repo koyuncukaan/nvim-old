@@ -1,8 +1,28 @@
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-Mason install lua-language-server
-npm install -g install typscript-language-server
+Mason install lua-language-server and others
+npm install -g typescript-language-server typescript
 npm install -g diagnostic-languageserver
 npm install -g @fsouza/prettierd
 npm install -g eslint_d
 npm install -g tree-sitter-cli
 npm install -g @astrojs/language-server
+
+
+Steps windows powershell
+- nerd fonts download
+- download powershell from microsoft store
+- download terminal from microsoft store
+- choco install ripgrep
+- Install-Module posh-git -Scope CurrentUser -Force
+- Install-Module oh-my-posh -Scope CurrentUser -Force
+- scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+- nvim $PROFILE.CurrentUserCurrentHost   (under C:/users/...)
+- oh-my-posh --init --shell pwsh --config .\koyuncu.omp.json |Invoke-Expression
+- Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+- Import-Module Terminal-Icons
+- Install-Module -Name z -Force
+- Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+- Set-PSReadLineOption -PredictionSource History (restart terminal after)
+- Set-PSReadLineOption -PredictionViewStyle ListView
+- scoop install fzf
+- Install-Module -Name PSFzf -Scope CurrentUser -Force
