@@ -23,8 +23,13 @@ packer.startup(function(use)
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use({
+      "glepnir/lspsaga.nvim",
+      branch = "main",
+      config = function()
+          require('lspsaga').setup({})
+      end,
+  })
   use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -43,7 +48,6 @@ packer.startup(function(use)
   })
   use 'akinsho/nvim-bufferline.lua'
   use 'github/copilot.vim'
-
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use {
@@ -53,4 +57,10 @@ packer.startup(function(use)
     end
   }
   use 'folke/tokyonight.nvim'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+}
 end)
