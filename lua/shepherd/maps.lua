@@ -6,7 +6,6 @@ keymap.set('i', '<C-c>', '<Esc>')
 -- Increment/decrement
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
-
 -- Delete a word backwards
 keymap.set('n', 'dw', 'vb"_d')
 
@@ -43,4 +42,4 @@ keymap.set('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>')
 --Center scroll for search
 keymap.set('n', 'n', 'nzz')
 
-
+keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
