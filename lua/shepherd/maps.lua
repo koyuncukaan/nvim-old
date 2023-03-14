@@ -42,4 +42,3 @@ keymap.set('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>')
 --Center scroll for search
 keymap.set('n', 'n', 'nzz')
 
-keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
