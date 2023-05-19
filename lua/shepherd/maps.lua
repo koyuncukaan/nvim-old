@@ -1,7 +1,9 @@
 local keymap = vim.keymap
 
-keymap.set('n', 'x', '"_x')
 keymap.set('i', '<C-b>', '<Esc>')
+keymap.set('n', 'x', '"_x')
+--find and replace
+keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Increment/decrement
 keymap.set('n', '+', '<C-a>')
@@ -41,4 +43,15 @@ keymap.set('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>')
 
 --Center scroll for search
 keymap.set('n', 'n', 'nzz')
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+--
+-- Move lines
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Joins the line below to the current one
+keymap.set("n", "J", "mzJ`z")
 
