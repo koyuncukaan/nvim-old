@@ -14,6 +14,10 @@ keymap.set('n', 'dw', 'vb"_d')
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
+keymap.set("x", "<leader>p", [["_dP]])
+keymap.set({"n", "v"}, "<leader>y", [["+y]])
+keymap.set("n", "<leader>Y", [["+Y]])
+keymap.set({"n", "v"}, "<leader>d", [["_d]])
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
