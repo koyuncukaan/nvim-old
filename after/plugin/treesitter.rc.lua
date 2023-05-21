@@ -14,7 +14,6 @@ ts.setup {
     "tsx",
     "toml",
     "fish",
-    "php",
     "json",
     "yaml",
     "css",
@@ -23,6 +22,7 @@ ts.setup {
     "astro",
     "javascript",
     "typescript",
+    "rust",
   },
   autotag = {
     enable = true,

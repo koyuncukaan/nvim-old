@@ -69,6 +69,10 @@ nvim_lsp.tsserver.setup {
   cmd = { "typescript-language-server.cmd", "--stdio" },
   capabilities = capabilities
 }
+nvim_lsp.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 -- set filetype for astro
 vim.cmd 'au! BufRead,BufNewFile *.astro set ft=astro'
