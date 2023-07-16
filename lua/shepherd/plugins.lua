@@ -24,9 +24,9 @@ packer.startup(function(use)
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use({
-      "glepnir/lspsaga.nvim",
-      branch = "main",
+  use ({
+      'nvimdev/lspsaga.nvim',
+      after = 'nvim-lspconfig',
       config = function()
           require('lspsaga').setup({})
       end,

@@ -15,14 +15,14 @@ ts.setup {
     "toml",
     "fish",
     "json",
-    "yaml",
     "css",
     "html",
     "lua",
-    "astro",
     "javascript",
     "typescript",
     "rust",
+    "markdown",
+    "markdown_inline"
   },
   context_commentstring = {
     enable = true,
