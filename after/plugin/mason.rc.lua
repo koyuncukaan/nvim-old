@@ -8,5 +8,16 @@ mason.setup({
 })
 
 lspconfig.setup {
+  ensure_installed = {
+        "tsserver",
+        "html",
+        "cssls",
+        "tailwindcss",
+        "lua_ls",
+        "jsonls",
+        "astro",
+        "dockerls",
+        "yamlls",
+      },
   automatic_installation = true
 }
